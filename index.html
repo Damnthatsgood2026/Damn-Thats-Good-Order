@@ -1,0 +1,110 @@
+<script>
+  const SQUARE_URL_SINGLE = "https://square.link/u/3tl1hon";
+  const ORDER_EMAIL = "damnthatsgoodcompany@gmail.com";
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Damn That's Good Brand — O.G. Lazy Lemon Granola</title>
+<script>
+  const SQUARE_URL_SINGLE = "https://square.link/u/3tl1hon";
+  const ORDER_EMAIL = "damnthatsgoodcompany@gmail.com";
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#F4EBD9;--espresso:#2A2418;--rust:#C25A3A;--honey:#D99A2B;--lemon:#F0DFA0;--cream-deep:#EADFC6;--display:"Bricolage Grotesque", system-ui, sans-serif;--body:"Newsreader", Georgia, serif;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--espresso);font-family:var(--body);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;max-width:1080px;margin:0 auto}
+  .brandmark{font-family:var(--display);font-weight:800;letter-spacing:-.01em;font-size:15px;text-transform:uppercase}
+  .nav-order{font-family:var(--display);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;background:var(--espresso);color:var(--cream);padding:10px 18px;border-radius:100px;transition:transform .15s ease, background .15s ease}
+  .nav-order:hover{transform:translateY(-1px);background:var(--rust)}
+  header{padding:30px 0 70px;text-align:center}
+  .kicker{font-family:var(--display);text-transform:uppercase;letter-spacing:.18em;font-weight:700;font-size:13px;color:var(--rust);margin-bottom:26px}
+  .hero-label{display:block;width:100%;max-width:620px;margin:0 auto 34px;height:auto;border-radius:16px;box-shadow:0 18px 40px -18px rgba(42,36,24,.45)}
+  h1{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:1.0;font-size:clamp(34px,6vw,62px);margin:0 auto 20px;max-width:18ch}
+  .lede{font-size:clamp(18px,2.4vw,22px);max-width:44ch;margin:0 auto 30px;color:#4a4233}
+  .btn{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:15px;text-decoration:none;display:inline-block;cursor:pointer;border:none;background:var(--rust);color:var(--cream);padding:16px 34px;border-radius:100px;transition:transform .15s ease, box-shadow .15s ease;box-shadow:0 6px 0 #9b3f25}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 #9b3f25}
+  .btn:active{transform:translateY(3px);box-shadow:0 2px 0 #9b3f25}
+  .shop{padding:60px 0;background:var(--espresso);color:var(--cream)}
+  .eyebrow{font-family:var(--display);text-transform:uppercase;letter-spacing:.16em;font-weight:700;font-size:12px;color:var(--honey);margin-bottom:14px}
+  .shop h2,.more h2,.story h2{font-family:var(--display);font-weight:800;letter-spacing:-.015em;font-size:clamp(30px,5vw,50px);line-height:1.02;margin-bottom:14px}
+  .product-head{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;margin-bottom:46px}
+  .bagphoto{width:100%;aspect-ratio:4/5;border-radius:18px;object-fit:cover;display:block;box-shadow:0 18px 40px -18px rgba(0,0,0,.55)}
+  .shop .sub{font-style:italic;color:#e7dcc6;margin-bottom:20px;max-width:40ch}
+  .feats{display:flex;flex-wrap:wrap;gap:8px}
+  .feat{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11px;background:var(--lemon);color:var(--espresso);padding:7px 13px;border-radius:100px}
+  .cards{display:grid;grid-template-columns:1fr;gap:18px;max-width:360px}
+  .card{background:var(--cream);color:var(--espresso);border-radius:18px;padding:26px 22px 24px;display:flex;flex-direction:column;position:relative}
+  .card .qty{font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:-.01em}
+  .card .price{font-family:var(--display);font-weight:800;font-size:46px;letter-spacing:-.03em;line-height:1;margin:10px 0 4px}
+  .card .price span{font-size:16px;font-weight:700;color:var(--rust)}
+  .card .note{font-size:15px;color:#5a5142;min-height:42px;margin:6px 0 20px}
+  .card .btn{width:100%;text-align:center;font-size:14px;padding:14px;box-shadow:0 5px 0 #9b3f25}
+  .ship-line{margin-top:34px;font-family:var(--display);font-weight:500;font-size:15px;color:#e7dcc6;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+  .ship-line b{color:var(--cream);font-weight:800}
+  .ship-line .sep{width:4px;height:4px;border-radius:50%;background:var(--honey)}
+  .story{padding:78px 0}
+  .story .inner{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+  .story p{font-size:20px;max-width:42ch;margin-bottom:18px;color:#3d362a}
+  .story .signed{font-family:var(--display);font-weight:700;color:var(--rust);font-size:16px;text-transform:uppercase;letter-spacing:.04em}
+  .recipe{background:var(--cream-deep);border-radius:20px;padding:34px 32px}
+  .recipe h3{font-family:var(--display);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--rust);margin-bottom:18px}
+  .recipe ul{list-style:none;font-family:var(--display);font-weight:500;font-size:17px}
+  .recipe li{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #d8caac}
+  .recipe li:last-child{border-bottom:none}
+  .recipe li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--honey);flex:none}
+  .nutrition{padding:72px 0;background:var(--cream-deep)}
+  .nut-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
+  .nut-copy .est{display:inline-block;font-family:var(--display);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.08em;background:var(--rust);color:var(--cream);padding:5px 12px;border-radius:100px;margin-bottom:16px}
+  .nut-copy p{font-size:17px;color:#3d362a;margin-bottom:16px;max-width:42ch}
+  .nut-copy .allergen{font-family:var(--display);font-weight:700;color:var(--espresso)}
+  .nut-copy .ingred{font-size:15px;color:#5a5142}
+  .nfp{background:#fff;color:#000;border:2px solid #000;border-radius:6px;padding:10px 14px;font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.15;max-width:340px}
+  .nfp .t{font-weight:800;font-size:30px;letter-spacing:-.5px;line-height:1;border-bottom:1px solid #000;padding-bottom:4px}
+  .nfp .sv{font-size:13px;padding:2px 0}
+  .nfp .sv b{font-weight:700}
+  .nfp .thick{border-top:9px solid #000;margin:4px 0}
+  .nfp .med{border-top:5px solid #000;margin:3px 0}
+  .nfp .hair{border-top:1px solid #000;margin:0}
+  .nfp .cal{display:flex;justify-content:space-between;align-items:flex-end;font-weight:800}
+  .nfp .cal .lbl{font-size:15px}
+  .nfp .cal .num{font-size:34px;line-height:.9}
+  .nfp .dv{text-align:right;font-size:11px;font-weight:700;padding:2px 0}
+  .nfp .row{display:flex;justify-content:space-between;font-size:13px;padding:2.5px 0;border-top:1px solid #000}
+  .nfp .row.sub{padding-left:16px}
+  .nfp .row.sub2{padding-left:30px}
+  .nfp .row b{font-weight:700}
+  .nfp .foot{font-size:10px;line-height:1.25;padding-top:5px}
+  .more{padding:64px 0 78px;background:var(--lemon)}
+  .more .head{text-align:center;margin-bottom:40px}
+  .more .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .panel{background:var(--cream);border-radius:18px;padding:34px 30px;text-align:center;display:flex;flex-direction:column;align-items:center}
+  .panel h3{font-family:var(--display);font-weight:800;font-size:24px;margin-bottom:10px}
+  .panel p{color:#4a4233;font-size:17px;max-width:34ch;margin-bottom:22px}
+  .panel .btn{font-size:13px;padding:13px 26px}
+  .panel-email{display:inline-block;margin-top:14px;font-family:var(--display);font-weight:500;font-size:14px;color:var(--rust);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+  .panel-email:hover{border-color:var(--rust)}
+  footer{background:var(--espresso);color:var(--cream);padding:50px 0 40px;text-align:center}
+  footer .fname{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:18px;margin-bottom:18px}
+  .links{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-bottom:22px;font-family:var(--display);font-weight:500;font-size:15px}
+  .links a{text-decoration:none;opacity:.85;transition:opacity .15s}
+  .links a:hover{opacity:1;color:var(--honey)}
+  .fineprint{font-size:14px;color:#b6ac98;font-style:italic}
+  .pay{font-family:var(--display);font-weight:500;font-size:13px;color:#b6ac98;margin-top:16px;text-transform:uppercase;letter-spacing:.06em}
+  @media(max-width:820px){.product-head{grid-template-columns:1fr;gap:26px}.cards{grid-template-columns:1fr;max-width:380px;margin:0 auto}.story .inner{grid-template-columns:1fr;gap:36px}.more .grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}.nut-inner{grid-template-columns:1fr;gap:30px}.nfp{margin:0 auto}}
+</style>
+</head>
+<body>
+
+<nav><div class="brandmark">The Damn That's Good Brand</div><a class="nav-order" href="#shop">Order</a></nav>
+
+<header><div class="wrap"><p class="kicker">Est. 2026 · South Bend, Indiana</p><img class="hero-label" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAK7BDwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRV
